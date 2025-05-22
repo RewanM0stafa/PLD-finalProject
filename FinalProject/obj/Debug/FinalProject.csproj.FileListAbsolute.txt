@@ -1,0 +1,9 @@
+C:\Users\AL_HRAMAIN\OneDrive\المستندات\SharpDevelop Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csprojResolveAssemblyReference.cache
+C:\Users\AL_HRAMAIN\OneDrive\المستندات\SharpDevelop Projects\FinalProject\FinalProject\obj\Debug\FinalProject.MainForm.resources
+C:\Users\AL_HRAMAIN\OneDrive\المستندات\SharpDevelop Projects\FinalProject\FinalProject\obj\Debug\FinalProject.csproj.GenerateResource.Cache
+C:\Users\AL_HRAMAIN\OneDrive\المستندات\SharpDevelop Projects\FinalProject\FinalProject\bin\Debug\FinalProject.exe
+C:\Users\AL_HRAMAIN\OneDrive\المستندات\SharpDevelop Projects\FinalProject\FinalProject\bin\Debug\FinalProject.pdb
+C:\Users\AL_HRAMAIN\OneDrive\المستندات\SharpDevelop Projects\FinalProject\FinalProject\bin\Debug\CalithaLib.dll
+C:\Users\AL_HRAMAIN\OneDrive\المستندات\SharpDevelop Projects\FinalProject\FinalProject\bin\Debug\GoldParserEngine.dll
+C:\Users\AL_HRAMAIN\OneDrive\المستندات\SharpDevelop Projects\FinalProject\FinalProject\obj\Debug\FinalProject.exe
+C:\Users\AL_HRAMAIN\OneDrive\المستندات\SharpDevelop Projects\FinalProject\FinalProject\obj\Debug\FinalProject.pdb
