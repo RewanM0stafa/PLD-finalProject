@@ -1,0 +1,75 @@
+"Start Symbol" = <program>
+
+<program>       ::= <stm_list> 
+
+<stm_list>      ::= <stm> <stm_list>
+                 | <empty>
+
+<stm>           ::= <assign>
+                 | <for_loop>
+                 | <if_stmt>
+                 | <return_stmt>
+                 | <print_stmt>
+                 | <input_stmt>
+                 | <func_def>
+
+<assign>        ::= <id> '=' <exp>
+
+<id>            ::= ID
+<digit>         ::= Digit
+
+<exp>           ::= <id>
+                 | <digit>
+                 | <id> <op> <exp>
+                 | <digit> <op> <exp>
+                 | '(' <exp> ')'
+
+<op>            ::= '+' | '-' | '*' | '/' | '%' | '^' | '='
+
+<print_stmt>    ::= 'print' '(' <exp> ')'
+
+<input_stmt>    ::= <id> '=' 'input' '(' ')'
+
+<return_stmt>   ::= 'return' <exp>
+
+<if_stmt>       ::= 'if' <cond> ':' <if_body>
+
+<cond>          ::= <exp> <cond_op> <exp>
+
+<cond_op>       ::= '>' | '>=' | '<' | '<=' | '==' | '!='
+
+<if_body>       ::= <stm>
+                 | <elif>
+                 | <else>
+
+<elif>          ::= 'elif' <cond> ':' <if_body>
+
+<else>          ::= 'else' ':' <stm>
+
+<for_loop>      ::= 'for' <id> 'in' <collection> ':' <for_body>
+                 | 'for' <id> 'in' 'range' '(' <ranges> ')' ':' <for_body>
+
+<collection>    ::= 'list'
+                 | 'set'
+                 | 'tuple'
+                 | 'map'
+                 | 'string'
+
+<ranges>        ::= <exp>
+                 | <exp> ',' <ranges>
+
+<for_body>      ::= <stm>
+                 | <stm> <for_body>
+
+<func_def>      ::= 'def' <id> '(' <params> ')' ':' <func_body>
+
+<params>        ::= <exp>
+                 | <exp> ',' <params>
+                 | <empty>
+
+<func_body>     ::= <stm>
+                 | <stm> <func_body>
+
+<empty>         ::=
+
+

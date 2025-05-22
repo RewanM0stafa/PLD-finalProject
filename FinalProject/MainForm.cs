@@ -20,6 +20,7 @@ namespace FinalProject
 	public partial class MainForm : Form
 	{
 		MyParser parser;
+		//MyLexer lexer; 
 		public MainForm()
 		{
 			
@@ -27,6 +28,7 @@ namespace FinalProject
 			
 			InitializeComponent();
             parser = new MyParser("pythonProjrctPLD.cgt", listBox1);
+         //   lexer = new MyLexer();
 			
 			// TODO: Add constructor code after the InitializeComponent() call.
 			
@@ -34,8 +36,7 @@ namespace FinalProject
 		
 		void RichTextBox1TextChanged(object sender, EventArgs e)
 		{
-			listBox1.Items.Clear();
-			parser.Parse(richTextBox1.Text);
+			
 			
 		}
 		
@@ -43,5 +44,32 @@ namespace FinalProject
 		{
 			
 		}
+		
+		void Button1Click(object sender, EventArgs e)
+		{
+			listBox1.Items.Clear();
+			parser.Parse(richTextBox1.Text);
+		}
+		
+		
+		
+	
+	/*
+		
+		void Button2Click(object sender, EventArgs e)
+		{
+					
+          listBox1.Items.Clear();
+
+          var tokens = lexer.Tokenize(richTextBox1.Text);
+
+          foreach (var token in tokens)
+          {
+            listBox1.Items.Add(token.ToString());
+          }
+		}
+		*/
+		
+		
 	}
 }
